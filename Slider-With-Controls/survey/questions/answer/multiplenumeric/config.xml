@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Customization of the slider question theme.
+-->
+<config>
+    <!-- Those metadata will be displayed in the template configuration page. They are not used for now. -->
+    <metadata>
+        <name>Slider-With-Controls</name>
+        <type>question_theme</type>
+        <title>Slider With Controls</title>
+        <creationDate>2023-01-20 08:00</creationDate>
+        <last_update>2023-01-20 08:00</last_update>
+        <lastSecurityUpdate>1.0</lastSecurityUpdate>
+        <author>Tony Partner</author>
+        <authorUrl>http://partnersurveys.com</authorUrl>
+        <license>GNU General Public License version 2 or later</license>
+        <version>1.0</version>
+        <apiVersion>1</apiVersion>
+        <description>Buttons added to sliders for fine value control.</description>
+        <questionType>K</questionType>
+        <group>Mask questions</group>
+        <subquestions>1</subquestions>
+        <answerscales>0</answerscales>
+        <hasdefaultvalues>1</hasdefaultvalues>
+        <assessable>0</assessable>
+        <class>numeric-multi</class>
+    </metadata>
+
+    <compatibility>
+        <version>6.0</version>
+    <version>5.0</version></compatibility>
+
+    <!--
+        Here the list of the css/js files to load.
+        Any file here will be loaded via the asset manager (when in config.php debug = 0)
+    -->
+    <files>
+        <css>
+            <filename>css/control-sliders.css</filename>
+        </css>
+        <js>
+            <filename>scripts/control-sliders.js</filename>
+        </js>
+        <preview>
+            <filename>slider_with_controls.png</filename>
+        </preview>
+    </files>
+
+    <attributes>
+        <!-- New attributes -->
+        <attribute>
+            <name>down_text</name>
+            <category>Custom options</category>
+            <sortorder>0</sortorder>
+            <inputtype>text</inputtype>
+            <default>-</default>
+            <help>Text or character in the "Down" button</help>
+            <caption>"Down" text</caption>
+        </attribute>
+		
+        <attribute>
+            <name>up_text</name>
+            <category>Custom options</category>
+            <sortorder>1</sortorder>
+            <inputtype>text</inputtype>
+            <default>+</default>
+            <help>Text or character in the "Up" button</help>
+            <caption>"Up" text</caption>
+        </attribute>
+		
+        <attribute>
+            <name>callout_prefix</name>
+            <category>Custom options</category>
+            <sortorder>2</sortorder>
+            <inputtype>text</inputtype>
+            <help>Prefix for the value displayed in the slider tooltip</help>
+            <caption>Prefix for tooltip</caption>
+        </attribute>
+		
+        <attribute>
+            <name>callout_suffix</name>
+            <category>Custom options</category>
+            <sortorder>3</sortorder>
+            <inputtype>text</inputtype>
+            <help>Suffix for the value displayed in the slider tooltip</help>
+            <caption>Suffix for tooltip</caption>
+        </attribute>
+		
+        <attribute>
+            <name>scrolling</name>
+            <category>Custom options</category>
+            <sortorder>4</sortorder>
+            <inputtype>switch</inputtype>
+            <options>
+                <no>No</no> <!-- Switch returns value 0 -->
+                <yes>Yes</yes> <!-- Switch returns value 1 -->
+            </options>
+            <default>0</default>
+            <help>Continuous slider movement if left mouse button held down.</help>
+            <caption>Slider scrolling enabled</caption>
+        </attribute>
+		
+		<attribute>
+            <name>scrolling_interval</name>
+            <category>Custom options</category>
+            <sortorder>5</sortorder>
+            <inputtype>integer</inputtype>
+            <default>150</default>
+            <min>0</min>
+            <help>Interval between slider movement when scrolling (in miliseconds)</help>
+            <caption>Scrolling time interval (in miliseconds)</caption>
+        </attribute>
+		
+        <!-- Hide/disable some core attributes -->
+        <attribute>
+            <name>equals_num_value</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>maximum_chars</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>max_num_value</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>max_num_value_n</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>min_num_value</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+			<name>min_num_value_n</name>
+            <category>Input</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>text_input_width</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+        <attribute>
+            <name>input_size</name>
+            <category>Display</category>
+            <inputtype/>
+        </attribute>
+    </attributes>
+
+    <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
+    <engine>
+        <load_core_css>true</load_core_css>
+        <load_core_js>true</load_core_js>
+        <show_as_template>true</show_as_template>
+        <show_as_question_type>true</show_as_question_type>
+
+        <!-- Here, you can publish packages set as third party extensions in application/config/third_party or  application/config/package -->
+        <!-- If bootstrap is registered as a css framework, it will be loaded first -->
+        <packages>
+			<!--
+            <add>qTip2</add>
+            <add>bootstrap/plugins/datetimepicker</add>
+			-->
+		</packages>
+    </engine>
+<compatibility><version/></compatibility></config>

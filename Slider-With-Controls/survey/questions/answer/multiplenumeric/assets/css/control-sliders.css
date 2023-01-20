@@ -1,0 +1,41 @@
+
+
+/***** 
+    Styles for the Slider-With-Controls question theme
+    Copyright (C) 2022 - Tony Partner (http://partnersurveys.com)
+    Licensed MIT, GPL
+    Version - 1.0
+    Create date - 11/05/2022
+*****/
+
+/** DEBUG **/
+/*
+input.numeric-item {
+	display: block !important;
+}
+*/
+
+
+.control-slider-separator {
+	clear: both;
+}
+
+.control-slider-buttons {
+	padding: 10px 0 20px 0;
+	text-align: center;
+}
+
+.control-slider-buttons button {
+	padding: 0 10px;
+	margin: 0 0 0 5px;
+}
+
+.control-slider-buttons button:disabled {
+	opacity:0.65;
+	filter:alpha(opacity=65);
+	cursor: default;
+}
+
+.control-slider-question .slider-reset {
+	margin-top: 42px;
+}
