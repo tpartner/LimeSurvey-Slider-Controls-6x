@@ -9,7 +9,7 @@
         <type>question_theme</type>
         <title>Slider With Controls</title>
         <creationDate>2023-01-20 08:00</creationDate>
-        <last_update>2023-01-20 08:00</last_update>
+        <last_update>2023-05-30 08:00</last_update>
         <lastSecurityUpdate>1.0</lastSecurityUpdate>
         <author>Tony Partner</author>
         <authorUrl>http://partnersurveys.com</authorUrl>
@@ -28,7 +28,7 @@
 
     <compatibility>
         <version>6.0</version>
-    <version>5.0</version></compatibility>
+	</compatibility>
 
     <!--
         Here the list of the css/js files to load.
@@ -170,4 +170,4 @@
 			-->
 		</packages>
     </engine>
-<compatibility><version/></compatibility></config>
+</config>
