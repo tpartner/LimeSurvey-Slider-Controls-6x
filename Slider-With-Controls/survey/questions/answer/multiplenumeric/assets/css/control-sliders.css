@@ -25,6 +25,10 @@ input.numeric-item {
 	text-align: center;
 }
 
+.ls-slider-item-vertical .control-slider-buttons {
+	text-align: left;
+}
+
 .control-slider-buttons button {
 	padding: 0 10px;
 	margin: 0 0 0 5px;
